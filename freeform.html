@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Practice</title>
+
+    <link href="./sass/main.min.css" rel="stylesheet">
+    
+</head>
+<body class="bg-grey-100">
+
+    <h1 class="display-1 text-center mt-3 mb-5">Free Form Practice!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="m-3"></div>
+            <div>
+                <form action="./freeform.php" method="post">
+                    <div class="mb-3">
+                        <h1 class="display-3 mt-5 mb-5" id="spanish-sentence">placeholder</h1>
+                        <label for="freeform" class="form-label mb-4">Write out the closest translation to English. When your ready to see the answer click "Submit"!</label>
+                        <input type="text" class="form-control" id="freeform" name="freeform" placeholder="Write your translation here...">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                <hr class="mt-5 mb-3 invisible">
+
+                <div class="invisible">
+                    <h1 class="display-5">Your translation...</h1>
+                    <p id="user-translation">my translation</p>
+                </div>
+
+                <hr class="mt-4 mb-4 invisible">
+
+                <div class="invisible">
+                    <h1 class="display-5">API translation...</h1>
+                    <p id="correct-translation">correct translation</p>
+                </div>
+
+        </div>
+
+        <div class="m-5">
+            <a href="./index.html" class="btn btn-primary">Return to Home</a>
+        </div>
+    </div>
+
+    <script src="./dist/jquery-webpack.bundle.js"></script>
+    <script src="./dist/bootstrap-webpack.bundle.js"></script>
+    <script src="./dist/spanishPractice-webpack.bundle.js"></script>
+</body>
+</html>
